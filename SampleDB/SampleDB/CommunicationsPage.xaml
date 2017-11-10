@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms" xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" x:Class="SampleDB.CommunicationsPage">
+	<StackLayout HorizontalOptions = "FillAndExpand" VerticalOptions = "StartAndExpand" Orientation = "Vertical" Padding = "0,20,0,0">
+        <!-- overall rating -->
+        <StackLayout HorizontalOptions = "FillAndExpand" VerticalOptions = "Start">
+           <StackLayout Padding = "20,0,20,0" Orientation = "Horizontal" HorizontalOptions ="FillAndExpand" VerticalOptions = "Start" Spacing = "5">
+             <Label HorizontalOptions = "FillAndExpand" Text = "Overall rating" FontSize = "14"/>
+             <Button  Image = "edit" HorizontalOptions = "End" WidthRequest = "20" HeightRequest = "20"/>
+           </StackLayout>
+            
+           <StackLayout  Orientation = "Vertical" HorizontalOptions ="FillAndExpand" VerticalOptions = "Start" Spacing = "5">
+             <BoxView HorizontalOptions = "FillAndExpand" VerticalOptions = "Start" HeightRequest = "1" BackgroundColor = "Silver"></BoxView>
+                <StackLayout Spacing = "0" Padding =  "0" HorizontalOptions = "FillAndExpand" VerticalOptions = "Start" Orientation = "Horizontal">
+                   <Button HeightRequest = "20" Text = "Exceptional" HorizontalOptions = "FillAndExpand"  BackgroundColor = "Transparent"/>
+                    <BoxView HorizontalOptions = "Start" VerticalOptions = "FillAndExpand" WidthRequest = "1" BackgroundColor = "Silver"/>
+                    <Button HeightRequest = "20" Text = "Effective" HorizontalOptions = "FillAndExpand" BackgroundColor = "Transparent"/>
+                    <BoxView HorizontalOptions = "Start" VerticalOptions = "FillAndExpand" WidthRequest = "1" BackgroundColor = "Silver"/>
+                   <Button HeightRequest = "20" Text = "Need Improvement" HorizontalOptions = "FillAndExpand" BackgroundColor = "Transparent"/>
+               </StackLayout>
+              <BoxView HorizontalOptions = "FillAndExpand" VerticalOptions = "Start" HeightRequest = "1" BackgroundColor = "Silver"></BoxView>
+           </StackLayout>
+         </StackLayout>
+        <!--End overall rating -->
+    </StackLayout>
+</ContentPage>
